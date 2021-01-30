@@ -1,0 +1,26 @@
+@font-face{
+  font-family: PF-Serif;
+  src: url('fonts/PT-Serif/PTSerif-Regular.ttf');
+}
+
+@font-face{
+  font-family: Poppins;
+  src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+header h1 {
+  font-size: 103px;
+  font-family: PF-Serif;
+}
+
+section sectionh2 {
+  font-size: 45px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 400;
+}
