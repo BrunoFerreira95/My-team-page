@@ -8,19 +8,174 @@
   src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
 
+@font-face{
+  font-family: Montserrat;
+  src: url('fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
 header h1 {
   font-size: 103px;
   font-family: PF-Serif;
+  margin: 145px 0px 102px 4%;
 }
 
-section sectionh2 {
+section h2 {
   font-size: 45px;
   font-family: Poppins;
   font-weight: 600;
+  margin-left: 4%;
 }
 
 section p {
   font-size: 18px;
   font-family: Poppins;
   font-weight: 400;
+  margin-left: 4%;
+}
+
+.grid-container {
+  margin-top: 160px;
+  margin-left: 27px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-item {
+  margin: 0px 20px 100px 0px;
+}
+
+.grid-item:nth-child(2n - 2) {
+  margin-top: 137px;
+}
+
+.title-player {
+  float: right;
+  padding:  0px 0px 0px 444px;
+  margin: 40px -458px -88px 0px;
+
+  width: 1000px;
+  height: auto;
+  font-size: 40px;
+  font-family: PF-Serif;
+  font-weight: 400;
+
+  transform: rotate(90deg);
+}
+
+.grid-item img {
+  margin-left: 4%;
+  width: 347px;
+  margin-bottom: 30px;
+}
+
+.grid-item .name-player {
+  font-family: Poppins;
+  font-weight: 600;
+  margin-left: 4%;
+}
+
+footer p {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  margin: 185px 0px 150px 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+  /* For desktop: */
+
+  .header-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-end;
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  header {
+    width: 49%;
+  }
+  header h1 {
+    font-size: 41px;
+    text-align: center;
+    font-family: PF-Serif;
+    margin: 145px 0px 102px 4%;
+  }
+
+  section.describe {
+    width: 50%;
+  }
+
+  section h2 {
+    font-size: 26px;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-left: 4%;
+  }
+
+  section p {
+    width: 62%;
+  }
+
+  .max-width {
+    max-width: 1090px;
+    margin: auto;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  }
+
+  .grid-item:nth-child(2n -  2) {
+    margin-top: 0px;
+  }
+
+  .grid-item:nth-child(3n - 1) {
+    margin-top: 100px;
+  }
+
+  .grid-item {
+    margin: 0px 20px 0px 0px;
+  }
+
+  .title-player {
+    float: right;
+    padding:  0px 0px 0px 448px;
+    margin: 40px -430px -88px 0px;
+  
+    width: 1000px;
+    height: auto;
+    font-size: 19px;
+    font-family: PF-Serif;
+    font-weight: 400;
+  
+    transform: rotate(90deg);
+  }
+  
+  .grid-item img {
+    margin-left: 4%;
+    width: 228px;
+    margin-bottom: 7px;
+  }
+  
+  .grid-item .name-player {
+    font-family: Poppins;
+    font-weight: 600;
+    margin-left: 4%;
+  }
+  
+  footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin: 89px 0px 64px 0px;
+  }
 }
